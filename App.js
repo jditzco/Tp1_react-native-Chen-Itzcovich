@@ -8,7 +8,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Image source={require('./assets/central_perk_logo.jpeg')} style={styles.imagen}/>
-      <Text> <h5> Try some of our most popular flavors </h5></Text>
+      <br/>
+      <Text style ={styles.texto}> <h5> Try some of our most popular flavors! </h5>  </Text>
       <br/>
       <Carta/>
       <StatusBar style="auto" />
@@ -28,5 +29,8 @@ const styles = StyleSheet.create({
     width: '80%',
     height: '20%',
     resizeMode: 'contain',
+  },
+  texto: {
+    fontWeight: 'bold'
   }
 });
